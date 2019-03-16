@@ -16,14 +16,27 @@
 </div>
 <div class="list-group">
     <div class="col-12">
-      <div class="btn-group">
+      <!-- <div class="btn-group dropdown"
+        appDropdown
+      >
         <button type="button" class="btn btn-primary dropdown-toggle">Manage Recipe</button>
         <ul class='dropdown-menu'>
             <li><a class="dropdown-item" href='#'>Add to Shopping List</a></li>
             <li><a class="dropdown-item" href='#'>Edit Recipe</a></li>
             <li><a class="dropdown-item" href='#'>Delete Recipe</a></li>
           </ul>
-      </div>
+      </div> -->
+      <div class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle"
+            id="manageMenu" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="true" appDropdown>Manage</button>
+              <div class="dropdown-menu"
+              aria-labelledby="manageMenu">
+              <a class="dropdown-item" href='#'>Add to Shopping List</a>
+              <a class="dropdown-item" href='#'>Edit Recipe</a>
+              <a class="dropdown-item" href='#'>Delete Recipe</a>
+            </div>
+          </div>
     </div>
 </div>
 <div class="list-group">
