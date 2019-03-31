@@ -18,6 +18,7 @@ export class RecipeService {
                 new Ingredient('Flour', 1.5),
                 new Ingredient('Butter', 2)
             ]),
+
         new Recipe(
             'Raspberry Chesscake ', 
             'This is a test recipe 2 ', 
@@ -32,7 +33,6 @@ export class RecipeService {
      ];
    
      constructor(private shoppingListService:ShoppingListService) {
-
      }
 
      getRecipes() {
